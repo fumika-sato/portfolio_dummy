@@ -1,1 +1,247 @@
 @charset "utf-8";
+
+/*=================================
+共通
+=================================*/
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #24292E;
+  font-size: 1.44rem;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #24292E;
+}
+* {
+  box-sizing: border-box;
+  margin:0; 
+  padding:0;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.section_title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 65px;
+}
+
+@media screen and (max-width: 750px) {
+  .section_title {
+    margin-bottom: 40px;
+  }
+}
+
+/*=================================
+header
+=================================*/
+header {
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  width: 120px;
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+.nav_item {
+  margin-left: 30px;
+}
+.icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    justify-content: normal;
+    height: auto;
+  }
+  .header_logo {
+    margin: 20px 0 0;
+  }
+  .nav_item {
+    font-size: 1.28rem;
+    margin-left: 20px;
+    padding: 10px 0;
+  }
+}
+/*=================================
+mv
+=================================*/
+.mv {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.mv img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/*=================================
+about
+=================================*/
+.about {
+  margin-bottom: 130px;
+}
+.about address {
+  font-style: normal;
+}
+.about p, address {
+  margin-bottom: 30px;
+}
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .about {
+    margin-bottom: 70px;
+  }
+}
+
+/*=================================
+works
+=================================*/
+.works {
+  margin-bottom: 153px;
+}
+.works .works_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works .works_item {
+  width: 31.4%; /* 264/840*100 */
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 750px) {
+  .works {
+    margin-bottom: 93px;
+  }
+  .works .works_list {
+    flex-direction: column;
+  }
+  .works .works_item {
+    width: 100%; 
+  }
+}
+
+/*=================================
+news
+=================================*/
+.news {
+  margin-bottom: 130px;
+}
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid #C8C8C8;
+}
+.news dt {
+  width: 15%;
+  padding: 15px;
+  border-bottom: 1px solid #C8C8C8;
+}
+.news dd {
+  width: 85%;
+  padding: 15px;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+@media screen and (max-width: 750px) {
+  .news {
+    margin-bottom: 70px;
+  }
+  .news dl {
+    flex-direction: column;
+  }
+  .news dt {
+    width: 100%;
+    border-bottom:  none;
+    padding-bottom: 0;
+  }
+  .news dd {
+    padding-top: 0;
+  }
+}
+/*=================================
+contact
+=================================*/
+.contact {
+  margin-bottom: 130px;
+}
+.contact table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact th {
+  font-weight: normal;
+  text-align: left;
+  vertical-align:top;
+  width: 14%; /* 117/840*100 */
+}
+.contact td {
+  width: 86%; /* 723/840*100 */
+  margin-bottom: 10px;
+}
+.contact input,
+.contact textarea {
+  width:100%;
+  padding: 10px;
+  border: 1px solid #C8C8C8;
+  margin-bottom: 10px;
+}
+.contact textarea {
+  height: 160px;
+}
+.contact .btn_area {
+  text-align: center;
+}
+.contact .contact_btn {
+  width: 200px;
+  padding: 15px 85px;
+  background-color: #24292E;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  .contact {
+    margin-bottom: 70px;
+  }
+  .contact th,
+  .contact td {
+    display: block;
+    width: 100%;
+  }
+}
+/*=================================
+footer
+=================================*/
+footer {
+  background-color: #24292E;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+}
