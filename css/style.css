@@ -5,7 +5,6 @@
 =================================*/
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 body {
   color: #24292E;
@@ -34,7 +33,7 @@ a:hover {
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 4%;
 }
 .section_title {
   text-align: center;
@@ -48,6 +47,11 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    padding: 0 60px;
+  }
+}
 /*=================================
 header
 =================================*/
@@ -134,7 +138,7 @@ works
 }
 
 .works .works_item {
-  width: 31.4%; /* 264/840*100 */
+  width: calc(264/840*100%);
   margin-bottom: 23px;
 }
 
@@ -163,12 +167,12 @@ news
   border-top: 1px solid #C8C8C8;
 }
 .news dt {
-  width: 15%;
+  width: calc(130/840*100%);
   padding: 15px;
   border-bottom: 1px solid #C8C8C8;
 }
 .news dd {
-  width: 85%;
+  width: calc(710/840*100%);
   padding: 15px;
   border-bottom: 1px solid #C8C8C8;
 }
@@ -204,10 +208,10 @@ contact
   font-weight: normal;
   text-align: left;
   vertical-align:top;
-  width: 14%; /* 117/840*100 */
+  width: calc(117/840*100%); 
 }
 .contact td {
-  width: 86%; /* 723/840*100 */
+  width: calc(723/840*100%); 
 }
 .contact input,
 .contact textarea {
